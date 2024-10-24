@@ -737,6 +737,28 @@ abbr[title] {
   color: #d1caac;
 }
 
+body {
+  background: #0f172a;
+}
+
+@media (min-width: 640px) {
+  body {
+    background: #334155;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background: #64748b;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background: #e2e8f0;
+  }
+}
+
 .avatar-card {
   display: flex;
   width: 290px;
