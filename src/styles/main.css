@@ -586,6 +586,10 @@ video {
   width: 5rem;
 }
 
+.w-\[280px\] {
+  width: 280px;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -650,6 +654,11 @@ video {
 .bg-slate-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
+.bg-pink-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 168 212 / var(--tw-bg-opacity));
 }
 
 .p-10 {
@@ -742,6 +751,18 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:grid {
+    display: grid;
+  }
+
+  .md\:w-\[500px\] {
+    width: 500px;
+  }
+
+  .md\:grid-cols-\[120px_1fr\] {
+    grid-template-columns: 120px 1fr;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
