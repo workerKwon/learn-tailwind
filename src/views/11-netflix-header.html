@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>넷플릭스 헤더</title>
+        <link rel="icon" href="/src/assets/favicon/euid.svg" />
+        <link rel="stylesheet" href="/src/styles/main.css" />
+    </head>
+    <body class="bg-slate-300 font-suit">
+        <header class="grid grid-cols-[1fr_auto_auto] bg-black p-5 gap-2 items-center">
+            <h1>
+                <a class="inline-flex align-middle max-w-36" href="/">
+                    <picture>
+                        <source srcset="/src/assets/logo/netflix@1x.png 1x, /src/assets/logo/netflix@2x.png 2x" type="image/webp" />
+                        <img src="/src/assets/logo/netflix@1x.png" srcset="/src/assets/logo/netflix@2x.png 2x" alt="NETFLIX" />
+                    </picture>
+                </a>
+            </h1>
+            <div class="inline-flex relative p-2 border border-gray-300 rounded-lg text-gray-300">
+                <svg class="w-6 h-6 left-2 absolute top-1/2 translate -translate-y-1/2 pointer-events-none">
+                    <use href="/src/assets/sprite/icons.svg#global" />
+                </svg>
+                <label class="sr-only" for="combo-1">언어 선택</label>
+                <select class="appearance-none outline-none bg-transparent px-8" name="selectLanguage" id="combo-1">
+                    <option value="korean">한국어</option>
+                    <option value="english">영어</option>
+                </select>
+                <svg class="w-6 h-6 right-2 absolute top-1/2 translate -translate-y-1/2 pointer-events-none">
+                    <use href="/src/assets/sprite/icons.svg#triangle" />
+                </svg>
+            </div>
+            <a class="bg-red-600 text-white text-base text-center rounded-lg py-2 px-3.5" href="/">로그인</a>
+        </header>
+    </body>
+</html>
