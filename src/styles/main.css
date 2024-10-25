@@ -690,6 +690,10 @@ abbr[title] {
   padding: 2.5rem;
 }
 
+.font-suit {
+  font-family: "SUIT Variable";
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
