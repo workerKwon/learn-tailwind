@@ -636,13 +636,26 @@ abbr[title] {
   margin: 2.5rem;
 }
 
+.m-5 {
+  margin: 1.25rem;
+}
+
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .mr-auto {
   margin-right: auto;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .block {
@@ -741,6 +754,16 @@ abbr[title] {
           appearance: none;
 }
 
+.columns-2 {
+  -moz-columns: 2;
+       columns: 2;
+}
+
+.break-after-column {
+  -moz-column-break-after: column;
+       break-after: column;
+}
+
 .grid-cols-12 {
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
@@ -831,6 +854,10 @@ abbr[title] {
   border-width: 1px;
 }
 
+.border-t {
+  border-top-width: 1px;
+}
+
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -844,6 +871,11 @@ abbr[title] {
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
+.border-t-slate-500 {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(100 116 139 / var(--tw-border-opacity));
 }
 
 .bg-blue-100 {
@@ -893,6 +925,11 @@ abbr[title] {
 .bg-red-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\/src\/assets\/icon\/checkbox-circle-unchecked\.svg\)\] {
@@ -971,6 +1008,10 @@ abbr[title] {
   padding-left: 2rem;
 }
 
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1001,6 +1042,18 @@ abbr[title] {
 
 .text-base {
   font-size: 1rem;
+}
+
+.leading-4 {
+  line-height: 1rem;
+}
+
+.leading-5 {
+  line-height: 1.25rem;
+}
+
+.leading-6 {
+  line-height: 1.5rem;
 }
 
 .text-blue-300 {
@@ -1178,6 +1231,13 @@ body {
   background-image: url(/src/assets/icon/checkbox-circle-checked.svg);
 }
 
+@media (min-width: 640px) {
+  .sm\:columns-3 {
+    -moz-columns: 3;
+         columns: 3;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:grid {
     display: grid;
@@ -1187,12 +1247,24 @@ body {
     width: 500px;
   }
 
+  .md\:columns-4 {
+    -moz-columns: 4;
+         columns: 4;
+  }
+
   .md\:grid-cols-\[120px_1fr\] {
     grid-template-columns: 120px 1fr;
   }
 
   .md\:flex-row {
     flex-direction: row;
+  }
+}
+
+@media (min-width: 950px) {
+  .lg\:columns-5 {
+    -moz-columns: 5;
+         columns: 5;
   }
 }
 
